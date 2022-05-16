@@ -1,6 +1,6 @@
 ---
-name: Support question
-about: Need help with Qapio?
+name: 🙋‍ Support question
+about: Need help with Blueprint?
 title: ''
 labels: ''
 assignees: ''
