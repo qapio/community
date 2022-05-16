@@ -1,5 +1,5 @@
 ---
-name: Feature request
+name: ⭐️ Feature request
 about: Propose a new feature or suggest an idea
 title: ''
 labels: ''
