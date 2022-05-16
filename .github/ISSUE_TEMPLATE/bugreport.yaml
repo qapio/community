@@ -1,0 +1,73 @@
+name: Bug Report
+description: File a bug report
+title: "[Bug]: "
+labels: ["bug", "triage"]
+assignees: ""
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: input
+    id: contact
+    attributes:
+      label: Your contact details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: subject
+    attributes:
+      label: Subject
+      description: ""
+      placeholder: Please add a subject of the bug
+      value: ""
+    validations:
+      required: true
+  - type: textarea
+    id: what-issue
+    attributes:
+      label: What bug are you facing?
+      description: Also tell us, what did you expect to happen?
+      placeholder: "Please describe the bug you have encountered as detailed as possible"
+      value: ""
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: What are the steps to reproduce this bug?
+      description: """"
+      placeholder: "Please provide the steps to reproduce this bug"
+      value: ""
+    validations:
+      required: true
+  - type: textarea
+    id: provide-logs
+    attributes:
+      label: Can you provide any relevant logs or output?
+      description: ""
+      placeholder: "Please provide logs or output to illustrate this issue. Please only provide non-sensitive data"
+      value: ""
+    validations:
+      required: true
+  - type: dropdown
+    id: blocking
+    attributes:
+      label: Blocking
+      description: Is this issue blocking you from using Qapio?
+      options:
+        - non-blocking
+        - blocking
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://qapio.com)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
