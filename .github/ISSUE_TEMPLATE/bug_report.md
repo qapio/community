@@ -1,5 +1,5 @@
 ---
-name: 🐛 Bug report
+name: "\U0001F41B Bug report"
 about: Something not working as expected?
 title: Please add a discriptive title
 labels: ''
