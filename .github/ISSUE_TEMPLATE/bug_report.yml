@@ -1,73 +1,93 @@
-name: Bug Report
-description: File a bug report
-title: "[Bug]: "
-labels: ["bug", "triage"]
-assignees: ""
+name: 🐛 Bug report
+description: Something not working as expected?
+title: "[Bug Report]: <title>"
+labels: "bug"
 
 body:
-  - type: markdown
+  - type: checkboxes
+    id: existing_issue
     attributes:
-      value: |
-        Thanks for taking the time to fill out this bug report!
+      label: Is there an existing similar issue?
+      description: Please [search](https://github.com/FridtjofK/issue_page_testing/issues?q=is%3Aopen+is%3Aissue+label%3Abug) for similar existing and solved issues before committing yours.
+      options:
+        - label: I have searched for similar issues, but haven't found any equivalent.
+          required: true
   - type: input
     id: contact
     attributes:
       label: Your contact details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
+      description: Please list your e-mail in order for us to reach out if necessary.
+      placeholder: email@example.com
     validations:
       required: false
-  - type: textarea
+  - type: input
     id: subject
     attributes:
       label: Subject
-      description: ""
-      placeholder: Please add a subject of the bug
-      value: ""
+      description: Please add a relevant subject for the bug you are experiencing.
     validations:
       required: true
+  - type: dropdown
+    id: type_of_issue
+    attributes:
+      label: Type of issue
+      options:
+        - Transient - Occuring only once
+        - Intermittent - Occuring irregularly
+        - Permanent - Occuring repeeatedly
+    validations:
+      required: false
+  - type: dropdown
+    id: blocking
+    attributes:
+      label: Blocking
+      description: Is the issue blocking you from using Qapio?
+      options:
+        - non-blocking
+        - blocking
+    validations:
+      required: false
+  - type: input
+    id: last_working_date
+    attributes:
+      label: Last working date
+      description: When was the last known working date? Please use a date with format DD/MM/YY e.g. 31.12.21
+    validations:
+      required: false      
   - type: textarea
     id: what-issue
     attributes:
-      label: What bug are you facing?
-      description: Also tell us, what did you expect to happen?
-      placeholder: "Please describe the bug you have encountered as detailed as possible"
-      value: ""
+      label: What issue are you facing?
+      description: Also tell us, what the expeceted outcome was?
+      placeholder: |
+        1. Describe the bug you encountered as detailed as possible.
+        2. What was the exptected outcome?
     validations:
       required: true
   - type: textarea
     id: reproduction
     attributes:
       label: What are the steps to reproduce this bug?
-      description: """"
-      placeholder: "Please provide the steps to reproduce this bug"
-      value: ""
+      description: "Please provide the steps to reproduce this bug. The more detailed the better!"
+      placeholder: |
+        Step 1:
+        Step 2:
+        Step 3:
     validations:
-      required: true
+      required: false
   - type: textarea
     id: provide-logs
     attributes:
       label: Can you provide any relevant logs or output?
-      description: ""
-      placeholder: "Please provide logs or output to illustrate this issue. Please only provide non-sensitive data"
-      value: ""
+      description: Please provide logs or output to illustrate your issue. Please only provide non-sensitive data.
+      placeholder: "Click here and then drag and drop your attachments"
     validations:
-      required: true
-  - type: dropdown
-    id: blocking
-    attributes:
-      label: Blocking
-      description: Is this issue blocking you from using Qapio?
-      options:
-        - non-blocking
-        - blocking
-    validations:
-      required: true
+      required: false
   - type: checkboxes
     id: terms
     attributes:
       label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://qapio.com)
+      description: By submitting this issue, you agree to follow our Code of Conduct.
       options:
         - label: I agree to follow this project's Code of Conduct
           required: true
