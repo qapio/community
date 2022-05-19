@@ -3,7 +3,7 @@
 👋 Thank you for contributing to Qapio making our product even better!
 If you have found a bug or thought of a brilliant future request, please read these contributing guidelines before opening an issue.
 
-Please check previous and ongoing issues before submitting one, in case it's already been submitted.
+> :ballot_box_with_check: Please check previous and ongoing issues before submitting one, in case it's already been submitted.
 
 Generally we have 3 types of contributional actions;
 - Bug report
