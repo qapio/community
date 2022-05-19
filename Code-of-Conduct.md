@@ -1,5 +1,5 @@
 
-# Qapio Community Code of Conduct
+# Qapio Community - Code of Conduct
 
 ## Our Pledge
 
