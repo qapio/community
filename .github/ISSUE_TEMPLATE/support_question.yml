@@ -1,0 +1,52 @@
+name: 🙋‍ Support question
+description: Need help with Qapio?
+title: "[Support]: <title>"
+labels: "support"
+
+body:
+  - type: checkboxes
+    id: existing_support
+    attributes:
+      label: Does a similar support question already exist?
+      description: Please search for similar existing support questions before committing yours.
+      options:
+        - label: I have searched for similar issues, but haven't found any equivalent.
+          required: true
+  - type: input
+    id: contact
+    attributes:
+      label: Your contact details
+      description: Please list your e-mail in order for us to reach out if necessary.
+      placeholder: email@example.com
+    validations:
+      required: false
+  - type: input
+    id: subject
+    attributes:
+      label: Subject
+      description: Please add a relevant subject for your support question.
+    validations:
+      required: true
+    id: what-can-we-do
+    attributes:
+      label: What can we help you with?
+      description: Please describe as detailed as you can which aspect you need support with.
+      placeholder: "e.g. I can not figure out how [...]"
+    validations:
+      required: false
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Can you provide any further context?
+      description: Please add any other context for your question such as screenshots, logs, etc.
+      placeholder: "Click here and drag and drop here for attachments"
+    validations:
+      required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our Code of Conduct.
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
