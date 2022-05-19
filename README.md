@@ -48,5 +48,5 @@ We will not list or upload a direct e-mail to the [Issues Pages](https://github.
 ## Code of Conduct
 When interacting on this community site, be sure to follow our [Code of Conduct](CODE_OF_CONDUCT.md)
 
-## Terms
+## Terms and conditions
 [These](TERMS.md) are our terms and conditions.
