@@ -1,6 +1,6 @@
 <br>
 <h1 align="center">
-	<a href="https://qapio.com/"><img src="https://github.com/qapio/community/images/qapiologo.svg" width="100%"></a>
+	<a href="https://qapio.com/"><img src="https://github.com/qapio/community/images/qapio-logo.png" width="100%"></a>
 	<br>
 <br>
 </h1>
