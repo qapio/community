@@ -1,0 +1,71 @@
+name: ⭐️ Feature request
+description: Propose a new feature or suggest an idea
+title: "[Feature request]: <title>"
+labels: "feature request"
+
+body:
+  - type: checkboxes
+    id: existing_request
+    attributes:
+      label: Is there an existing similar feature request?
+      description: Please search for similar existing requests before committing yours.
+      options:
+        - label: I have searched for similar issues, but haven't found any equivalent.
+          required: true
+  - type: input
+    id: contact
+    attributes:
+      label: Your contact details
+      description: Please list your e-mail in order for us to reach out if necessary.
+      placeholder: email@example.com
+    validations:
+      required: false
+  - type: input
+    id: subject
+    attributes:
+      label: Subject
+      description: Please add a relevant subject for your feature request.
+    validations:
+      required: true
+  - type: textarea
+    id: problem-related
+    attributes:
+      label: Is your feature request related to a problem?
+      description: If yes, please give a clear annd concise description of what the problem is.
+      placeholder: "e.g. I'm always frustrated when [...]"
+    validations:
+      required: false
+  - type: textarea
+    id: solution
+    attributes:
+      label: Describe the solution of the request.
+      description: "Describe the solution you would like to have and how you want the outcome of the solution to be. Please be as specific and detailed as possible."
+      placeholder: |
+        Step 1:
+        Step 2:
+        Step 3:
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Describe the alternatives you've considered.
+      description: If you have thought of any alternative solutions, please describe these here and why these would be better or worse.
+    validations:
+      required: false
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional context.
+      description: Add any other context or screenshots about the feature request here.
+      placeholder: "Click here and drag and drop here for attachments"
+    validations:
+      required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our Code of Conduct.
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
