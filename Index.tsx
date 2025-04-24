@@ -1,2 +1,2 @@
 
-export const Index = () => <div>HEKKkkdfgsdfsdfsdfgggggsdfggggdfsdfsdfdfdgdgfgdgfdgE</div>
+export const Index = () => <div>HEKKkkdfgsdfsdfsdfgggggdfgdgdgdfgsdfggggdfsdfsdfdfdgdgfgdgfdgE</div>
